@@ -6,7 +6,7 @@
         if (!$link)
             return null;
         $res = mysql_select_db($config["mysql_db"], $link);
-        if (!res)
+        if (!$res)
         {
             mysql_close($link);
             return null;
